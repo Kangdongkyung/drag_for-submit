@@ -51,7 +51,7 @@ CUDA operators 모듈을 설치해줘야함.
   </tbody>
 </table>
 
-위의 체크포인트 파일(.pth)을 weights 폴더에 넣어줘야함
+위의 체크포인트 파일(.pth)을 X-Pose/weights 폴더에 넣어줘야함
 
 ```
 @article{xpose,
