@@ -63,3 +63,15 @@ CUDA operators 모듈을 설치해줘야함.
 ```
 # 추론 방법
 
+
+
+<hr>
+
+```
+@article{zhang2024gooddrag,
+    title={GoodDrag: Towards Good Practices for Drag Editing with Diffusion Models},
+    author={Zhang, Zewei and Liu, Huan and Chen, Jun and Xu, Xiangyu},
+    journal = {arXiv},
+    year={2024}
+}
+```
