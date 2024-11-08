@@ -4,6 +4,10 @@
 conda env update -f environment.yaml
 conda activate drag_submit_test
 ```
+```bash
+ pip install git+https://github.com/openai/CLIP.git
+```
+clip 설치 명령어
 
 ### X-Pose 사용을 위한 전처리
 ```bash
