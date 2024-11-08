@@ -1,7 +1,7 @@
 # drag_for-submit
 # 설치 방법
 ```bash
-conda env create -f environment.yaml
+conda env update -f environment.yaml
 conda activate drag_submit_test
 ```
 
