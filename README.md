@@ -57,14 +57,6 @@ CUDA operators 모듈을 설치해줘야함.
 
 위의 체크포인트 파일(.pth)을 X-Pose/weights 폴더에 넣어줘야함
 
-```
-@article{xpose,
-  title={X-Pose: Detection Any Keypoints},
-  author={Yang, Jie and Zeng, Ailing and Zhang, Ruimao and Zhang, Lei},
-  journal={ECCV},
-  year={2024}
-}
-```
 # 추론 방법
 
 
@@ -77,5 +69,14 @@ CUDA operators 모듈을 설치해줘야함.
     author={Zhang, Zewei and Liu, Huan and Chen, Jun and Xu, Xiangyu},
     journal = {arXiv},
     year={2024}
+}
+```
+
+```
+@article{xpose,
+  title={X-Pose: Detection Any Keypoints},
+  author={Yang, Jie and Zeng, Ailing and Zhang, Ruimao and Zhang, Lei},
+  journal={ECCV},
+  year={2024}
 }
 ```
