@@ -88,6 +88,7 @@ python gooddrag_ui.py
 7. Save Intermediate Images (Optional): drag과정의 중간 과정을 보고 싶으면 Save Intermediate Images칸을 체크해주세요. 그리고 중간 이미지들을 연결해서 만든 비디오를 얻고 싶으면 Get video버튼을 눌러주세요. 중간 과정 이미지들과 비디오가 저장이 됩니다.
 
 <hr>
+
 ### 중요 파라미터 소개
 
 1. Drag Parameters
@@ -100,11 +101,11 @@ python gooddrag_ui.py
     
     → ex: End time step 35/ Point tracking number per each step 2
     
-    로 진행했을 때, 중간 이미지의 개수는 35개가 된다.
+    로 진행했을 때, 중간 이미지의 개수는 35개가 됩니다.
     
 2. Advanced Parameters
     
-    Point tracking의 경우에는 Motion supervision을 진행한 다음 새로운 handle point를 찾는 과정이다. Point tracking feature patch size는 탐색 범위를 설정하는 변수이다. 한마디로 Motion supervision feature path size보다 크게 잡는 걸 권장하는 이유는 Motion supervision path size를 r_m라고 했을 때, 실제 정사각형 한 변의 길이는 2r_m + 1이므로 Motion supervision을 진행한 범위 안에서 새로운 handle point를 찾기 위해 Point tracking patch size를 크게 잡는 편이 결과물의 정확도를 높인다고 생각합니다.
+    Point tracking의 경우에는 Motion supervision을 진행한 다음 새로운 handle point를 찾는 과정입니다. Point tracking feature patch size는 탐색 범위를 설정하는 변수입니다. 한마디로 Motion supervision feature path size보다 크게 잡는 걸 권장하는 이유는 Motion supervision path size를 r_m라고 했을 때, 실제 정사각형 한 변의 길이는 2r_m + 1이므로 Motion supervision을 진행한 범위 안에서 새로운 handle point를 찾기 위해 Point tracking patch size를 크게 잡는 편이 결과물의 정확도를 높인다고 생각합니다.
     
     Motion supervision feature path size < Point tracking feature patch size (Optional)
 ```
