@@ -108,7 +108,12 @@ python gooddrag_ui.py
     Point tracking의 경우에는 Motion supervision을 진행한 다음 새로운 handle point를 찾는 과정입니다. Point tracking feature patch size는 탐색 범위를 설정하는 변수입니다. 한마디로 Motion supervision feature path size보다 크게 잡는 걸 권장하는 이유는 Motion supervision path size를 r_m라고 했을 때, 실제 정사각형 한 변의 길이는 2r_m + 1이므로 Motion supervision을 진행한 범위 안에서 새로운 handle point를 찾기 위해 Point tracking patch size를 크게 잡는 편이 결과물의 정확도를 높인다고 생각합니다.
     
     Motion supervision feature path size < Point tracking feature patch size (Optional)
+
+<hr>
+
 ```
+
+
 
 
 @article{zhang2024gooddrag,
