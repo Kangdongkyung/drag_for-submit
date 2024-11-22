@@ -91,6 +91,7 @@ python gooddrag_ui.py
 attn_utlis.py에서
 코드 수정 필요
 ```
+        query = attn.to_q(hidden_states)# + lora_scale * attn.processor.to_q_lora(hidden_states)  
         key = attn.to_k(encoder_hidden_states)# + lora_scale * attn.processor.to_k_lora(encoder_hidden_states)
         value = attn.to_v(encoder_hidden_states)# + lora_scale * attn.processor.to_v_lora(encoder_hidden_states)
         hidden_states = attn.to_out[0](hidden_states)# + lora_scale * attn.processor.to_out_lora(hidden_states)
