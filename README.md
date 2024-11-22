@@ -87,6 +87,15 @@ python gooddrag_ui.py
 6. Save the Results (Optional): drag가 된 이미지, 새로운 포인트, 새로운 포인트가 그려진 이미지를 저장하고 싶으면, Save Result버튼을 눌러주세요. 데이터는 ./result/test에 저장이 됩니다.
 7. Save Intermediate Images (Optional): drag과정의 중간 과정을 보고 싶으면 Save Intermediate Images칸을 체크해주세요. 그리고 중간 이미지들을 연결해서 만든 비디오를 얻고 싶으면 Get video버튼을 눌러주세요. 중간 과정 이미지들과 비디오가 저장이 됩니다.
 
+#### 만약 'AttnProcessor2_0' object has no attribute 'to_q_lora' 가 발생한다면
+attn_utlis.py에서
+코드 수정 필요
+```
+        key = attn.to_k(encoder_hidden_states)# + lora_scale * attn.processor.to_k_lora(encoder_hidden_states)
+        value = attn.to_v(encoder_hidden_states)# + lora_scale * attn.processor.to_v_lora(encoder_hidden_states)
+        hidden_states = attn.to_out[0](hidden_states)# + lora_scale * attn.processor.to_out_lora(hidden_states)
+```
+<br>
 ### LDMVFI 적용방법 (Optional)
 1. LDMVFI 모델 불러오기
    ```
