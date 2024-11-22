@@ -87,6 +87,19 @@ python gooddrag_ui.py
 6. Save the Results (Optional): drag가 된 이미지, 새로운 포인트, 새로운 포인트가 그려진 이미지를 저장하고 싶으면, Save Result버튼을 눌러주세요. 데이터는 ./result/test에 저장이 됩니다.
 7. Save Intermediate Images (Optional): drag과정의 중간 과정을 보고 싶으면 Save Intermediate Images칸을 체크해주세요. 그리고 중간 이미지들을 연결해서 만든 비디오를 얻고 싶으면 Get video버튼을 눌러주세요. 중간 과정 이미지들과 비디오가 저장이 됩니다.
 
+### LDMVFI 적용방법 (Optional)
+1. LDMVFI 모델 불러오기
+   ```
+   git clone https://github.com/danier97/LDMVFI.git
+   ```
+2. Input mp4 형식의 video를 yuv형식으로 변환
+   (-r 뒤에 오는 숫자는 입력, 출력 비디오의 프레임수를 의미하므로 경우에 따라 알맞게 조정 필요)
+    ```
+    ffmpeg -i (입력 비디오 이름 지정).mp4 -r 20 -c:v rawvideo -pix_fmt yuv420p -r 20 (출력 비디오 이름 지정).yuv
+    ```
+3. interpolate_yuv.py 파일 실행
+   <img align="left" src="./image.png">
+   
 <hr>
 
 ### 중요 파라미터 소개
