@@ -98,7 +98,7 @@ python gooddrag_ui.py
     ffmpeg -i (입력 비디오 이름 지정).mp4 -r 20 -c:v rawvideo -pix_fmt yuv420p -r 20 (출력 비디오 이름 지정).yuv
     ```
 3. interpolate_yuv.py 파일 실행
-   <img align="left" src="./image.png">
+   <img src="./image.png">
    
 <hr>
 
