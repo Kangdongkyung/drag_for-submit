@@ -99,7 +99,7 @@ python gooddrag_ui.py
     ```
 3. interpolate_yuv.py 파일 실행
    <img src="./image.png">
-   
+좀 더 자세한 사항은 <a> https://github.com/danier97/LDMVFI </a> 참고.
 <hr>
 
 ### 중요 파라미터 소개
