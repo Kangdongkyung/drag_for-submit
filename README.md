@@ -112,10 +112,6 @@ python gooddrag_ui.py
 <hr>
 
 ```
-
-
-
-
 @article{zhang2024gooddrag,
     title={GoodDrag: Towards Good Practices for Drag Editing with Diffusion Models},
     author={Zhang, Zewei and Liu, Huan and Chen, Jun and Xu, Xiangyu},
@@ -131,4 +127,14 @@ python gooddrag_ui.py
   journal={ECCV},
   year={2024}
 }
+```
+
+```
+@article{danier2023ldmvfi,
+  title={LDMVFI: Video Frame Interpolation with Latent Diffusion Models},
+  author={Danier, Duolikun and Zhang, Fan and Bull, David},
+  journal={arXiv preprint arXiv:2303.09508},
+  year={2023}
+}
+
 ```
